@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Lock, Unlock } from 'lucide-react';
-import { Button } from '../../../components/common/Button';
+import { Button } from '@/components/common/Button';
 
 interface ThresholdSettingsProps {
   threshold: number;

@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Eye, Shield } from 'lucide-react';
-import { Card, CardHeader } from '../../../components/common/Card';
-import { Badge } from '../../../components/common/Badge';
-import { Button } from '../../../components/common/Button';
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '../../../components/common/Table';
-import { EmptyState } from '../../../components/common/EmptyState';
-import { InfoBox } from '../../../components/common/InfoBox';
+import { Card, CardHeader } from '@/components/common/Card';
+import { Badge } from '@/components/common/Badge';
+import { Button } from '@/components/common/Button';
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/common/Table';
+import { EmptyState } from '@/components/common/EmptyState';
+import { InfoBox } from '@/components/common/InfoBox';
 
 interface User {
   id: string;

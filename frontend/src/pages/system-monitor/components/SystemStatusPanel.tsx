@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Wifi, Server, Database, CheckCircle, AlertCircle } from 'lucide-react';
-import { StatusCard } from '../../../components/common/StatusCard';
+import { StatusCard } from '@/components/common/StatusCard';
 
 export function SystemStatusPanel() {
   const [scannerStatus, setScannerStatus] = useState({ online: 5, total: 5 });

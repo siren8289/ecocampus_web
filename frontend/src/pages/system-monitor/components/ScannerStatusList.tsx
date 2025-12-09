@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Wifi, Clock, Activity } from 'lucide-react';
-import { StatCard } from '../../../components/ui/StatCard';
+import { StatCard } from '@/components/common/StatCard';
 
 interface Scanner {
   id: string;

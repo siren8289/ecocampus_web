@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Plus, Edit, Trash2, X, Save, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
-import { Card, CardHeader, CardTitle } from '../../../components/common/Card';
-import { Button } from '../../../components/common/Button';
-import { Input } from '../../../components/common/Input';
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '../../../components/common/Table';
-import { IconButton } from '../../../components/common/IconButton';
-import { InfoBox } from '../../../components/common/InfoBox';
+import { Card, CardHeader, CardTitle } from '@/components/common/Card';
+import { Button } from '@/components/common/Button';
+import { Input } from '@/components/common/Input';
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/common/Table';
+import { IconButton } from '@/components/common/IconButton';
+import { InfoBox } from '@/components/common/InfoBox';
 
 interface Room {
   id: string;

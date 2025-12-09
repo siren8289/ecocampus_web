@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Card } from '../../../components/common/Card';
-import { SearchInput } from '../../../components/common/SearchInput';
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '../../../components/common/Table';
-import { EmptyState } from '../../../components/common/EmptyState';
+import { Card } from '@/components/common/Card';
+import { SearchInput } from '@/components/common/SearchInput';
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/common/Table';
+import { EmptyState } from '@/components/common/EmptyState';
 
 interface BeaconData {
   id: string;

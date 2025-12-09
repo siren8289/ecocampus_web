@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Save } from 'lucide-react';
-import { Card } from '../../../components/common/Card';
-import { Button } from '../../../components/common/Button';
-import { InfoBox } from '../../../components/common/InfoBox';
+import { Card } from '@/components/common/Card';
+import { Button } from '@/components/common/Button';
+import { InfoBox } from '@/components/common/InfoBox';
 
 export function ThresholdManagement() {
   const [threshold, setThreshold] = useState(-70);

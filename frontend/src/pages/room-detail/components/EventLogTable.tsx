@@ -1,6 +1,6 @@
 import { CheckCircle, XCircle } from 'lucide-react';
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '../../../components/common/Table';
-import { EmptyState } from '../../../components/common/EmptyState';
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/common/Table';
+import { EmptyState } from '@/components/common/EmptyState';
 
 interface RoomEvent {
   id: string;
