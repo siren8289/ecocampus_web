@@ -1,0 +1,274 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* 🎨 Soft Eco Green + Yellow 파스텔 컬러 시스템 */
+  --eco-green-primary: #81D18A;
+  --eco-green-hover: #6BBF76;
+  --eco-green-light: #A8E6AF;
+  --eco-yellow-primary: #FFE48A;
+  --eco-yellow-hover: #FFD769;
+  --eco-yellow-light: #FFF4CC;
+  
+  /* 배경 - 아이보리 */
+  --background: #FFFBF0;
+  --background-secondary: #FFFFFF;
+  
+  /* 텍스트 */
+  --foreground: #1F2937;
+  --foreground-secondary: #4B5563;
+  --foreground-muted: #9CA3AF;
+  
+  /* 카드 */
+  --card: #FFFFFF;
+  --card-foreground: #1F2937;
+  
+  /* Primary - Soft Eco Green */
+  --primary: #81D18A;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #6BBF76;
+  
+  /* Secondary - Soft Eco Yellow */
+  --secondary: #FFE48A;
+  --secondary-foreground: #1F2937;
+  --secondary-hover: #FFD769;
+  
+  /* 상태 색상 */
+  --success: #81D18A;
+  --success-light: #A8E6AF;
+  --warning: #FFE48A;
+  --warning-light: #FFF4CC;
+  --danger: #EF4444;
+  --danger-light: #FCA5A5;
+  
+  /* 기타 */
+  --popover: #FFFFFF;
+  --popover-foreground: #1F2937;
+  --muted: #F3F4F6;
+  --muted-foreground: #6B7280;
+  --accent: #F3F4F6;
+  --accent-foreground: #1F2937;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E7EB;
+  --input: transparent;
+  --input-background: #FFFFFF;
+  --switch-background: #D1D5DB;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #81D18A;
+  
+  /* 차트 색상 - Eco Green & Yellow 테마 */
+  --chart-1: #81D18A;
+  --chart-2: #FFE48A;
+  --chart-3: #6BBF76;
+  --chart-4: #FFD769;
+  --chart-5: #A8E6AF;
+  
+  --radius: 0.625rem;
+  
+  /* 사이드바 */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1F2937;
+  --sidebar-primary: #81D18A;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F3F4F6;
+  --sidebar-accent-foreground: #1F2937;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #81D18A;
+}
+
+.dark {
+  --background: #111827;
+  --foreground: #F9FAFB;
+  --card: #1F2937;
+  --card-foreground: #F9FAFB;
+  --popover: #1F2937;
+  --popover-foreground: #F9FAFB;
+  --primary: #81D18A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #FFE48A;
+  --secondary-foreground: #1F2937;
+  --muted: #374151;
+  --muted-foreground: #9CA3AF;
+  --accent: #374151;
+  --accent-foreground: #F9FAFB;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #374151;
+  --input: #374151;
+  --ring: #81D18A;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #81D18A;
+  --chart-2: #FFE48A;
+  --chart-3: #6BBF76;
+  --chart-4: #FFD769;
+  --chart-5: #A8E6AF;
+  --sidebar: #1F2937;
+  --sidebar-foreground: #F9FAFB;
+  --sidebar-primary: #81D18A;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #374151;
+  --sidebar-accent-foreground: #F9FAFB;
+  --sidebar-border: #374151;
+  --sidebar-ring: #81D18A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  
+  /* Eco 커스텀 컬러 */
+  --color-eco-green: #81D18A;
+  --color-eco-green-hover: #6BBF76;
+  --color-eco-green-light: #A8E6AF;
+  --color-eco-yellow: #FFE48A;
+  --color-eco-yellow-hover: #FFD769;
+  --color-eco-yellow-light: #FFF4CC;
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 커스텀 스크롤바 - Eco Green 테마 */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #81D18A #F3F4F6;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #F3F4F6;
+    border-radius: 4px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: #81D18A;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: #6BBF76;
+  }
+
+  /* 또는 스크롤바 완전히 숨기기 (선택사항) */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
